@@ -23,6 +23,7 @@ grandes telas: > 1200px;
     section#principal h1 {
         text-align: center;
     }    
+
 }
 
 /*Tablets*/
@@ -33,19 +34,40 @@ grandes telas: > 1200px;
     }
 
     main > section#redes {
-        left: calc(100vw - 250px);
-        width: 250px;
         border-radius: 20px;
         border: 1px solid var(--cor01);
         background-color: var(--cor04);
+        right: 0px;
     }
 }
 
 /*Computadores*/
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1299px) {
+    section#principal {
+        width: 70vw;
+        max-width: 800px;
+        margin-left: calc(30vw - 250px);
+    }
+
+    main > section#redes {
+        position: absolute;
+        top: 170px;
+        background-color: var(--cor05);
+        right: 0px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
     section#principal {
         max-width: 800px;
         margin: auto;
+    }
+
+    main > section#redes {
+        position: absolute;
+        top: 170px;
+        background-color: var(--cor05);
+        right: 0px;
     }
 }

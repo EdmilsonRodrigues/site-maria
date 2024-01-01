@@ -19,11 +19,11 @@ font-family: 'Diphylleia', serif;
 */
 
 :root {
-    --cor01: #8d0b62;
-    --cor02: #ffd670;
-    --cor03: #b69977;
-    --cor04: #fbacac;
-    --cor05: #ffb77c;
+    --cor01: #A85C22;
+    --cor02: #EB9B32;
+    --cor03: #DC9C2C;
+    --cor04: #EBB550;
+    --cor05: #EBC950;
     --fonte-principal: Quicksand, arial, 'sans serif';
     --fonte-cabecalho: 'Updock', cursive;
     --fonte-titulo: 'Libre Baskerville', serif; 
@@ -42,7 +42,7 @@ font-family: 'Diphylleia', serif;
 }
 
 html, body {
-    background-color: var(--cor02);
+    background-color: var(--cor05);
     font-family: var(--fonte-principal);
 }
 
@@ -51,7 +51,12 @@ html, body {
 header {
     text-align: center;
     padding: 10px;
-    background-color: var(--cor05);
+    background-color: var(--cor02);
+}
+
+header a {
+    text-decoration: none;
+    color: black;
 }
 
 header h1 {
@@ -95,6 +100,16 @@ main section#principal a {
     text-decoration: none;
     color: var(--cor01);
 }
+
+main section#principal article#livro h1 {
+    text-align: center;
+}
+
+main section#principal article#livro a#link-livro {
+    display: block;
+    margin: auto;
+}
+
 
 main > section#redes {
     position: fixed;
@@ -147,4 +162,12 @@ main > section#redes > article#a-redes > ul {
     'wght' 400,
     'GRAD' 0,
     'opsz' 24
-  }
+}
+
+/* Rodapé */
+
+footer {
+    padding: 2px;
+    text-align: center;
+    background-color: var(--cor01);
+}

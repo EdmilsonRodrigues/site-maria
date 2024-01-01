@@ -34,8 +34,8 @@ function ajusteDisplay() {
     } else {
         art.style.display = 'block';
         span.style.display = 'none';
-        sec.style = 'width:25vw;';
-        sec.style = 'left: 75vw';
+        sec.style = 'width:250px;';
+        sec.style = 'rigth:0px;';
     }
 }
 
